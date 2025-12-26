@@ -16,14 +16,17 @@ Filekami implements a centralized control flow where `main.c` acts as a router, 
 To build the library and install it to your system's standard paths:
 
 1. **Compile Object Files:**
-    gcc -c subject*.c
 
-2. **Create Static Library:**
-    ar rcs libfilekami.a subject*.o
+       gcc -c subject*.c
 
-3. **Install Headers and Library:**
-    sudo cp files.h /usr/local/include/
-    sudo cp libfilekami.a /usr/local/lib/
+3. **Create Static Library:**
+  
+       ar rcs libfilekami.a subject*.o
+
+6. **Install Headers and Library:**
+
+       sudo cp files.h /usr/local/include/
+       sudo cp libfilekami.a /usr/local/lib/
 
 ## Usage
 Once installed, you can compile the project without referencing individual source files or full paths:
